@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Get Data Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Get Data Example</h1>
+    </header>
+    <div class="container">
+      <div>
+        <button class="button" id="get-data-btn">Get Data</button>
+        <label for="post-count">Number of Posts:</label>
+        <select id="post-count" name="post-count">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+        <label for="sort-column">Sort by:</label>
+        <select id="sort-column" name="sort-column">
+          <option value="id">ID</option>
+          <option value="title">Title</option>
+          <option value="body">Body</option>
+        </select>
+        <label for="sort-direction">Direction:</label>
+        <select id="sort-direction" name="sort-direction">
+          <option value="asc" selected>Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th data-column="id" class="sortable">ID</th>
+            <th data-column="title" class="sortable">Title</th>
+            <th data-column="body" class="sortable">Body</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <p> ****************************************************************************</p>
+    </footer>
+    <script src="main.js">
+    </script>
+  </body>
+</html>
